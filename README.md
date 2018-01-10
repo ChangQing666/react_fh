@@ -2,7 +2,7 @@
 
 
 <h3 align="center">
-   比比找房
+   fh
 </h3>
 
 <p align="center">
@@ -11,7 +11,7 @@
 
 ## Description
 
-比比找房微信公众号内嵌H5
+fh微信公众号内嵌H5
 
 
 ## installation
