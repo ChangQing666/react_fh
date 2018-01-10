@@ -1,0 +1,427 @@
+.cardWrapper{
+  
+  background-color: #fff;
+  margin: 21px 30px 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  .cardTop{
+    display: flex;
+    height: 111px;
+   justify-content: center;
+    border-bottom: 1PX solid #eeeeee;
+    font-size: 32px;
+    .fromStation{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      .text{
+        width: 62px;
+        margin-right: 10px;
+        text-align: right;
+        font-size: 32px;
+        color: #999;
+      }
+      .line{
+        flex: 1;
+      }
+    }
+    .toStation{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-flow: row-reverse;
+      .text{
+        margin-right: 10px;
+        font-size: 32px;
+        color: #999;
+      }
+      .line{
+        margin-right: 28px;
+        font-size: 32px;
+      }
+    }
+    .toggle{
+      width: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .direction{
+    position: relative;
+    z-index: 2;
+    height: 203px;
+    padding-left: 31px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    box-shadow: 0 6px 8px 3px #F5F5F5;
+    .startRadio{
+      display: flex;
+      align-items: center;
+      color: #999999;
+      position: relative;
+      .toDirection,.activeRadio{
+        flex: 1;
+        margin-left: 19px;
+      }
+      .activeRadio{
+        color: #000;
+      }
+      input[type='radio']{
+        opacity: 0;
+        position: absolute;
+      }
+    }
+    .startRadio:first-child{
+      margin-bottom: 50px;
+    }
+    .startRadio:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.checkImg{
+  width: 34px;
+  height: 34px;
+}
+.accordHeader{
+  display: flex;
+  align-items:center;
+  height: 100%;
+  .text{
+    font-size: 30px;
+    margin-left: 14px;
+  }
+  .bmimg{
+    margin-left: 26px;
+    img{
+      width: 26px;
+      margin-left:22px;
+    }
+  }
+}
+.bmColor{
+  margin-bottom: 32px;
+}
+.bmTop img,.bmBottom img{
+  width: 26px;
+  margin-right: 12px;
+}
+
+.accordHeader:before{
+  content: '';
+  display: block;
+  width: 6px;
+  height: 30px;
+  background-color: #42ABF9;
+}
+.caret{
+  width: 6px;
+  height: 30px;
+  background-color: #42ABF9;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+.am-accordion{
+  border-top: none;
+}
+.am-accordion-header{
+  height: 111px !important;
+}
+.am-accordion .am-accordion-item{
+  border-bottom: 1PX solid #eeeeee;
+}
+.am-accordion .am-accordion-item .am-accordion-header:after{
+  border-bottom: none;
+}
+.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box:after{
+  border-bottom: none;
+}
+.am-accordion .am-accordion-item .am-accordion-header:after {
+    border-bottom: none !important;
+}
+.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box{
+  padding-top: 2PX;
+}
+// 超近道card
+.chaoWrapper{
+  font-size: 28px;
+  color: #333333;
+  padding: 0 52px;
+  padding-bottom: 42px;
+  display: flex;
+  align-items: center;
+  .imgWrapper{
+    width: 34px;
+    margin-right: 24px;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+  .chaojindao{
+    word-break: break-all;
+    .onStationType{
+      color: #151515;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+  }
+}
+.toTransfer{
+  padding-left: 62px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+}
+.todirectionItem:first-child .toTransfer{
+  padding-top: 0px;
+}
+.transferTag{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 78px;
+  margin-right: 12px;
+  .heng{
+    border: 1PX dashed #C9D9EB;
+    width: 30px;
+  }
+}
+.transferTag:before,.transferTag:after{
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #C9D9EB;
+  border-radius:50%;
+}
+.todirectionItem{
+  border-bottom: 1PX solid #eeeeee;
+}
+.todirectionItem:last-child{
+  border-bottom: none;
+}
+// 出口card
+.exitlineColor{
+  color: #fff;
+  font-size: 28px;
+  margin-left: 30px;
+  padding: 2px 5px;
+}
+
+.exitItem{
+  padding:0 34px 0;
+  word-break: break-all;
+  .itemTop{
+    height: 77px;
+    line-height: 77px;
+    font-size: 28px;
+    color: #333333;
+  }
+  .itemBottom{
+    padding:22px 20px;
+    background-color: #F8F8F8;
+    color: #999999;
+    font-size: 26px;
+  }
+}
+.exitItem:last-child{
+  padding-bottom: 39px;
+}
+
+// 首末班时间card
+.workTime{
+  padding:0 30px 38px;
+  .workWrapper{
+    border-radius:8px;
+    overflow: hidden;
+    .workTop{
+      height: 52px;
+      line-height: 52px;
+      text-align: center;
+      font-size: 28px;
+      color: #fff;
+    }
+    .workBottom{
+      border-left: 1PX solid #eeeeee;
+      border-right: 1PX solid #eeeeee;
+      border-bottom: 1PX solid #eeeeee;
+      padding: 20px 30px 16px 0;
+      display: flex;
+      word-break: break-all;
+      .directionWrapper{
+        flex: 1;
+        padding-left: 30px;
+        border-right: 1PX dashed #eeeeee;
+        .directionText{
+          font-size: 28px;
+          color: #333333;
+          padding: 8px 0;
+        }
+        .directionTime{
+          display: flex;
+          align-items: center;
+          .shou,.mo{
+            flex: 1;
+            display: flex;
+            align-items: center;
+          }
+          .tag{
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            margin-right:12px;
+            font-size: 22px;
+          }
+          .time{
+            flex: 1;
+            color:#999999;
+            font-size:24px;
+          }
+        }
+      }
+      .directionWrapper:last-child{
+        border-right: none;
+      }
+    }
+  }
+}
+
+.tonggao{
+  background-color:#FFF0D1;
+  height:60px;
+  line-height:60px;
+  padding-left:26px;
+  font-size:24px;
+  color:#FBA500;
+  margin-bottom:18px;
+}
+
+// search mark
+.searchMark{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0,0,0,.7);
+}
+.zhuxianWrap{
+  padding: 26px 0 0 30px;
+}
+.zhuFen{
+  padding: 9px 16px;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  border-radius:8px;
+}
+
+// rmMark
+.item{
+  font-size: 30px;
+  margin: 0 30px;
+  .clickMe{
+    font-size: 24px;
+    width: 77px;
+    height: 33px;
+    line-height: 33px;
+    margin: 15px;
+    text-align: center;
+    background: #FE7F7F;
+    color:#FFFFFF;
+    border-radius: 32px;
+  }
+  .lineName{
+    span{
+      margin: 10px 20px 0 0;
+      text-align: center;
+      display: block;
+      border-radius: 100px;
+      background: #FF6500;
+      color: #FFFFFF;
+      min-width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 24px;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+    img{
+      height: 17px;
+      width: 50px;
+      margin: 20px 30px 0 30px;
+    }
+  }
+  .txt{
+    width: 120px;
+    color: #999;
+    flex: 0 0 auto;
+  }
+  img{
+    height: 31px;
+    margin-top: 12px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  ul{
+    padding: 30px 0 30px 20px;
+    li{
+      display: flex;
+      line-height: 60px;
+    }
+  }
+  span{
+    font-size: 28px;
+  }
+}
+
+.chaojindao .clickMe{
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 0 13px;
+  font-size: 24px;
+  background-color: #FE7F7F;
+  margin-left: 16px;
+  border-radius:33px;
+}
+
+.littlePoint{
+  background: rgba(255,118,42,0.9);
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 24px;
+  border-radius: 29px;
+  position: fixed;
+  right: 12px;
+  top: 160px;
+  width: 46px;
+  padding: 26px 10px;
+  text-align: center;
+  z-index: 100;
+}
+.findHourseCode{
+  padding: 50px 0 48px;
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  img{
+    width: 320px;
+  }
+  div{
+    margin-top: 27px;
+  }
+}

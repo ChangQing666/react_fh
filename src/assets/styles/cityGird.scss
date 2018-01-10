@@ -1,0 +1,18 @@
+.currentCity{
+  background-color: #F7F7F7;
+  padding: 0 26px;
+  height: 90px;
+  line-height: 90px;
+  img{
+    vertical-align: middle;
+    width: 40px;
+  }
+  .current{
+    color: #999;
+    margin-right: 18px;
+  }
+  .city{
+    font-size: 30px;
+    margin-left: 20px;
+  }
+}

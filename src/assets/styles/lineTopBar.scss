@@ -1,0 +1,53 @@
+.lineTop{
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  background-color: #fff;
+  border-bottom: .5PX solid #ddd;
+  .goBack{
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    background: url(../images/H-right@2x.png) no-repeat 20px center / 20px auto;
+  }
+  .city{
+    i{
+      display: inline-block;
+      width: 14px;
+      height: 7px;
+      background:  url(../images/H-top@2x.png) no-repeat center center / 14px auto;
+      webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      margin: 0 0 6px 16px;
+      &.lineTop-icoTop{
+        webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+
+  }
+  .nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    color: #42ABF9;
+    padding-right: 20px;
+    font-size: 28px;
+  }
+  .search{
+    width: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding-right: 20px;
+    img{
+      width: 100%;
+    }
+  }
+}

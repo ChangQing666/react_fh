@@ -1,0 +1,8 @@
+export const CITY_DEFAULT = 'CITY_DEFAULT'
+export const SITE_DEFAULT = 'SITE_DEFAULT'
+export const SITE_LIST = 'SITE_LIST'
+export const LINE_SEARCHSTATUS = 'LINE_SEARCHSTATUS'
+export const CITY_LIST = 'CITY_LIST'
+export const STATIONDETAIL = 'STATIONDETAIL'
+export const STATIONINDEX = 'STATIONINDEX'
+export const REMARK = 'REMARK'

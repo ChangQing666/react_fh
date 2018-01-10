@@ -1,0 +1,87 @@
+.homePage{
+	.homeBody{
+		padding: 0 20px 0;
+	}
+  /* background: #eee; */
+
+  .hb-main{
+	  position: absolute;
+	  box-sizing: border-box;
+	  width: 100%;
+	  
+	  left: 0;
+	  bottom: 45px;
+	  top: 120px;
+	  padding: 0 20px 0;
+	  .hb_body{
+		  height: 100%;
+		  border-radius: 8px;
+		  background: url('../images/BANNER@2x.png') no-repeat #FFFFFF center bottom/100% auto;
+		  display: flex;
+		  flex-direction: column;
+	  }
+	.logo{
+		height: 166px;
+		position: relative;
+		background: url('../images/logo@2x.png') no-repeat center 61px / 216px auto;
+		.point{
+			width: 88px;
+			height: 44px;
+			background-color: #FFEDE2;
+			position: absolute;
+			right: 18px;
+			top: 18px;
+			border-radius:4px;
+			line-height: 44px;
+			text-align: center;
+			color: #FF6600;
+			font-size: 24px;
+
+		}
+	}
+	.am-search{
+		background-color:#fff;
+		padding: 0 40px;
+	}
+  }
+.yongjdu{
+	padding: 0 38px 0 36px;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	height: 90px;
+	color: #999;
+	margin: 0 45px;
+	border: 1PX solid #E6E9EB;
+	border-radius:50px;
+	.left {
+		width: 50px;
+	}
+	.right{
+		width: 12px;
+	}
+	img{
+		display: block;
+		width: 100%;
+	}
+	.mid{
+		margin-left: 24px;
+		flex: 1;
+	}
+}
+}
+
+.homeSearch{
+	margin: 0 38px;
+	height: 90px;
+	line-height: 90px;
+	border-radius:8px;
+	border: 1PX solid #FF7214;
+	text-align: center;
+	color: #FF7214;
+	font-size: 30px;
+	img{
+		width: 34px;
+		margin: -1PX 12px 0 0;
+	}
+}

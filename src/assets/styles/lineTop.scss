@@ -1,0 +1,47 @@
+.mapline{
+  background-color: #666;
+  color: #FFFFFF;
+  font-size: 24px;
+  border-radius: 29px;
+  position: fixed;
+  left: 21px;
+  top: 250px;
+  width: 30px;
+  line-height: 30px;
+  padding: 30px 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+.lineIndex{
+  display: flex;
+  .indexLeft{
+    width: 140px;
+    background: #F8F8F8;
+    div{
+      line-height: 110px;
+      text-align: center;
+      font-size: 26px;
+      color: #666;
+      position: relative;
+      &.active{
+        color: #000;
+        background: #fff;
+      }
+      &.active:after{
+        content:'';
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background: #f60;
+        left: 0;
+        top: 0;
+        
+      }
+    }
+  }
+  .indexRight{  
+    width: 100%;
+    background: #fff;
+  }
+}
